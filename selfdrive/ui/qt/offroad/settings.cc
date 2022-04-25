@@ -173,7 +173,7 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
 
 void DevicePanel::updateCalibDescription() {
   QString desc =
-      "openpilot requires the device to be mounted within 4° left or right and "
+      "Pikachu 4/24/22 openpilot requires the device to be mounted within 4° left or right and "
       "within 5° up or 8° down. openpilot is continuously calibrating, resetting is rarely required.";
   std::string calib_bytes = Params().get("CalibrationParams");
   if (!calib_bytes.empty()) {
